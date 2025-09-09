@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* About Section photo */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it circular */
+  display: block;
+  margin: 20px auto;
+  object-fit: cover; /* Ensures it doesn't stretch */
+}
+
+/* Hero Section photo */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* For larger screens, you can place image next to text */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    padding: 100px 50px;
+  }
+
+  .hero-pic {
+    margin-top: 0;
+  }
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 15px 50px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #000, #333);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0077aa;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.feature-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* About */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+}
